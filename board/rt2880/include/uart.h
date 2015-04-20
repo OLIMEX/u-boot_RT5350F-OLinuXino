@@ -145,9 +145,10 @@
 #define UART_RI_SIGNAL		(0x40)
 #define UART_DCD_SIGNAL		(0x80)
 
-#define UART_MODEM_INT_MASK	( UART_DELTA_CTS_INT | UART_DELTA_DSR_INT \
-				| UART_TE_RI_INT     | UART_DELTA_DCD_INT )
-
+//#define UART_MODEM_INT_MASK	( UART_DELTA_CTS_INT | UART_DELTA_DSR_INT \
+//				| UART_TE_RI_INT     | UART_DELTA_DCD_INT )
+//XXX: Tesing...
+#define UART_MODE_INT_MASK ( 0x00 )
 
 /* Scratch register bit definitions */
 #define UART_SCRATCH_REG_MASK	(0xFF)
