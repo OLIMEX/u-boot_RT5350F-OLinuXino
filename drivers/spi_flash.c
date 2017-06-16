@@ -92,6 +92,7 @@
 #endif
 
 static int raspi_wait_ready(int sleep_ms);
+static inline int raspi_write_enable(void);
 static unsigned int spi_wait_nsec = 0;
 
 
